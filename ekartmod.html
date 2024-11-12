@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            float:left;
+            box-shadow: 0 4px 8px;
+            height: 50px;
+            width: 200px;
+           
+        }
+        .padding{
+
+             padding: 10px;
+        }
+        .box{
+            box-sizing: border-box;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form>
+      <div class="body"> 
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:rgb(77, 8, 8)">
+            <div class="container-fluid">
+                <a class="navbar-brand c" href="#"><h2>BookTalk</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navb">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="glyphicon glyphicon-log-in"></span>
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navdown" role="button" data-toggle="dropdown" aria-expanded="false">Genre</a>
+                            <ul class="dropdown-menu" aria-labelledby="navdown" style="background-color:aqua;">
+                                <li><a class="dropdown-item" href="#">Romance</a> </li>
+                                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="#">Horror</a></li>
+                                <li><a class="dropdown-item" href="#">Thriller</a></li>
+                                <li><a class="dropdown-item" href="#">Mystery</a></li>
+                                <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control custom-input w-50" type="search" placeholder="search" aria-label="search"/>
+                        <button class="btn" style="color:white ;" type="submit "><i class="fa fa-search"></i></button>
+                    </form>
+                    
+                </div>
+                
+            </div>
+        </nav>
+        <div id="demo" class="carousel slide carousel-light" data-bs-carousel="carousel" data-bs-ride="carousel" data-interval="200">
+            <div class="carousel-inner">
+              <div class="carousel-item active " style="height: 400px;">
+                <img src="images/bookshelf349.jpg" alt="Haiii" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>More than just words—experience the magic of reading!</h3>
+                </div>
+            </div>
+            <div class="carousel-item " style="height:400px;">
+                <img src="images/image-76.jpeg" alt="Helooo" class="d-block" style="width: 100%;">
+                <div class="carousel-caption">
+                    <h3>Shelf discovery in progress—find your next great read with us!</h3>
+                </div>
+            </div>
+           
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>  
+              </button>
+    
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            
+        </div>
+      </div>
+      <div>
+        <h4>Recomended For You</h4>
+        <i class="fa fa-book" style="font-size:24px"></i>
+      </div>
+     
+      <div class="card padding box">
+        <img src="images/images (1).jpeg"></img>
+        <div><h6><b>Travle Around The world</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+        </div>
+
+        <div class="card padding">
+        <img src="images/images (2).jpeg" width="175px"></img>
+        <div><h6><b>The Magic Land</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+      </div>
+
+      <div class="card padding">
+        <img src="images/images (3).jpeg"></img>
+        <div><h6><b>The Disguised Princes</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+      </div>
+
+      <div class="card padding">
+        <img src="images/images (4).jpeg"></img>
+        <div><h6><b>Path Of The Dragon</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+      </div>
+
+      <div class="card padding" >
+        <img src="images/images (5).jpeg"></img>
+        <div><h6><b>Legend Of The Ice Witch</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+      </div>
+      
+      <div class="card">
+        <img src="images/fantasy-cover-january-4-768x1226-1.jpeg"></img>
+        <div><h6><b>The Sprit Demon</b></h6></div>
+        <div><h6><p>A fantasy book</p></h6></div>
+      </div>
+      <div class="card">
+        <img src="images/f4074f3f58446b078e3db46077564575.jpg"></img>
+        <div><h6><b>Dragon Throne</b></h6></div>
+        <div><h6><p>An Adventure book</p></h6></div>
+      </div>
+      <div class="card">
+        <img src="images/attachment_39493946.jpeg"></img>
+        <div><h6><b>The Temptest</b></h6></div>
+        <div><h6><p>A fantasy book</p></h6></div>
+      </div>
+
+      <div class="card">
+        <img src="images/8c27502941b45e7708ab7902ce67ff4a.jpg"></img>
+        <div><h6><b>Sea Voyagers</b></h6></div>
+        <div><h6><p>A fantasy book</p></h6></div>
+      </div>
+
+      <div class="card">
+        <img src="images/542c3972-98fb-416f-a812-7797fdf0d698.jpg"></img>
+        <div><h6><b>Game Of Shadows</b></h6></div>
+        <div><h6><p>A fantasy book</p></h6></div>
+      </div>
+
+      
+    </form>
+</body>
